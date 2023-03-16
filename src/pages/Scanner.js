@@ -64,7 +64,11 @@ class Scanner extends Component {
   }
 
   _onDetected = result => {
-    this.props.onDetected(result)
+  
+    if(result?.codeResult?.code){
+      this.props.onDetected(result)
+      Quagga.stop();
+    }
   }
 
   render() {

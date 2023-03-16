@@ -19,6 +19,7 @@ class BarcodeScanner extends Component {
   }
 
   render() {
+    console.log(this.state.results);
     return (
       <div>
         <Link to="/">

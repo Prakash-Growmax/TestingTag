@@ -9,6 +9,7 @@ import {
 import Home from './pages/Home'
 import Bargen from './pages/BarcodeGenerator'
 import Barscan from './pages/BarcodeScanner'
+import QRCode from './pages/QRCode';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
               </Route>
               <Route path="/barcode_scanner">
                 <Barscan/>
+              </Route>
+              <Route exact path="/qrcode">
+                <QRCode/>
               </Route>
             </Switch>
 

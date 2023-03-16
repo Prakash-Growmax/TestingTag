@@ -14,6 +14,7 @@ function BarcodeGenerator() {
         value: barcode,
         options: {
           background: '#ffffff',
+          border:"1px solid red"
         }
     });
     const downloadBarcode = () => {
