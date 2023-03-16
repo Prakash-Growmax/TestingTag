@@ -17,6 +17,7 @@ class BarcodeScanner extends Component {
     this.setState({ results: [] })
     this.setState({ results: this.state.results.concat([result]) })
   }
+  console.log("!21")
 
   render() {
     console.log(this.state.results);
